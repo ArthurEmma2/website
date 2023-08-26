@@ -1,0 +1,64 @@
+<div class="tabs">
+  <!-- Tab buttons -->
+  <button class="tab-button" onclick="openTab(event, 'tab0')">Tab 1</button>
+  <button class="tab-button" onclick="openTab(event, 'tab1')">Tab 2</button>
+  <!-- Add more buttons for additional tabs -->
+
+  <!-- Tab contents -->
+  <section id="tab0" class="tab-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt
+    voluptatem nulla possimus. Consectetur, tempora. Temporibus sit dolores,
+    repudiandae cum, maiores vitae deleniti libero ducimus numquam quae velit
+    natus placeat, totam expedita incidunt consectetur adipisci sint? Amet
+    consectetur sequi, nihil praesentium dolores corporis! Animi neque expedita
+    eligendi similique, labore accusantium dolor iusto quaerat esse aspernatur
+    nam quos mollitia dolorum reiciendis enim sapiente veritatis iste recusandae
+    ratione eveniet minima. Distinctio, ex eum! Perspiciatis facere molestias,
+    assumenda dolor quibusdam qui ipsam eligendi doloremque dolores quia
+    reprehenderit et quasi veniam suscipit minima sapiente inventore nam libero
+    obcaecati repellat sit quo ipsa dolorum. Ut minus rerum aspernatur
+    asperiores maxime animi repudiandae quod fugiat fugit ab est, obcaecati
+    officiis dolores, ducimus harum. Modi dolore similique sint quaerat,
+    voluptates expedita temporibus recusandae vitae pariatur, praesentium
+    dignissimos magni error, veritatis quae exercitationem mollitia aperiam sunt
+    quo quam eligendi. Eos veritatis quia officiis facere accusamus aspernatur
+    illum pariatur beatae necessitatibus, optio voluptatibus sint alias eveniet
+    eaque labore molestias exercitationem tempora consequatur quos laudantium
+    maxime. Possimus incidunt unde tempore exercitationem. Modi necessitatibus,
+    quae libero veritatis sed nobis, repudiandae rerum dicta maiores assumenda
+    fuga cumque sapiente corporis dolor obcaecati minus accusamus, natus quia!
+    Alias dignissimos voluptates minus sed deserunt similique. {{ partial
+    "content/svg.html" "cloud_new" }}
+  </section>
+  <div id="tab1" class="tab-content" style="display: none">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, sed! Sint
+    voluptate vitae, a praesentium assumenda ex nihil ea possimus consequatur
+    perferendis, exercitationem autem reiciendis. Ut incidunt aliquid totam
+    assumenda ratione cum, quasi doloremque quaerat obcaecati. Ad eos
+    accusantium debitis doloribus consequatur vero quis laudantium cumque animi,
+    commodi laboriosam odio dolorum voluptas ratione distinctio ab est modi
+    molestiae? Facere harum rerum dolores! Minima maxime cupiditate tempora.
+    Ratione ex sit voluptatibus voluptate assumenda? Molestiae, earum officia
+    repellat impedit qui, ut culpa possimus id sequi iste dolore voluptas facere
+    sed modi repellendus quaerat non, laudantium molestias laborum quasi neque
+    repudiandae? Animi, error. {{ partial "content/svg.html" "fingertips" }}
+  </div>
+  <!-- Add more divs for additional tab contents -->
+</div>
+
+<script>
+  function openTab(event, tabName) {
+    const tabContents = document.getElementsByClassName("tab-content");
+    for (const content of tabContents) {
+      content.style.display = "none";
+    }
+
+    const tabs = document.getElementsByClassName("tab-button");
+    for (const tab of tabs) {
+      tab.classList.remove("active");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.classList.add("active");
+  }
+</script>
