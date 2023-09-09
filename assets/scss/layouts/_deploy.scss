@@ -1,0 +1,48 @@
+.custom-col-13 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tabs-d-wrapper {
+  margin-bottom: -15px;
+  margin-top: 80px;
+}
+
+.deploy-header-text {
+  text-align: center;
+  width: 1000px;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1.12px;
+  margin-top: 60px;
+}
+
+.deploy-hr {
+  width: 1231px;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .custom-col-13 {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .deploy-header-text {
+    text-align: center;
+    width: 900px;
+    font-size: 50px;
+    margin-top: 60px;
+    line-height: 60px;
+  }
+
+  .deploy-hr {
+    width: 1090px;
+  }
+
+  .tabs-d-wrapper {
+    margin-bottom: -15px;
+    margin-top: 80px;
+  }
+}
