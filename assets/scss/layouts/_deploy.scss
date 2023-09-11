@@ -28,7 +28,6 @@
   margin: 90px auto;
 }
 
-/* Add this CSS to style the active tab button with an underline */
 .tab-button.active {
   text-decoration: 2px solid black underline;
   text-underline-offset: 22px;
@@ -143,6 +142,15 @@
 
 .available-op-btn button:hover .ex-link-arrow svg path {
   stroke: #fff;
+}
+
+.console-s-btn:hover .ex-link-arrow2 svg path {
+  stroke: #fff;
+}
+
+.console-s-btn .ex-link-arrow2 svg {
+  margin-bottom: 3px;
+  margin-left: 2px;
 }
 
 .available-op-desc {
